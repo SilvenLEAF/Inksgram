@@ -1,1 +1,1 @@
-Hey Kad, Self-destruct in 27s
+Hey Manash, Self-destruct in 15s
