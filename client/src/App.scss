@@ -1,0 +1,124 @@
+$orange-global: #e49d4d;
+$pink-global: #ff84c6;
+$purple-global: #c959e5;
+
+.App {
+  text-align: center;
+}
+
+.Opening-Page {
+  display: none;
+  position: fixed;
+  margin: auto;
+  height: 100vh;
+  width: 100vw;
+  background-color: $pink-global;
+
+  @media only screen and (min-width: 420px) {
+    position: absolute;
+    margin: auto;
+    right: 10%;
+    height: 100vh;
+    width: 360px;
+    background-color: $pink-global;
+    border-radius: 20px;
+  }
+
+  h1 {
+    font-size: 1.2em;
+    color: #fff;
+  }
+
+  .start-button {
+    height: 50px;
+    width: 100px;
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    right: 10px;
+    bottom: 10px;
+    font-size: 1em;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: $pink-global;
+    position: absolute;
+  }
+}
+
+.opening-upper-box {
+  height: 72vh;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 20px;
+
+  h1 {
+    color: $pink-global;
+    font-size: 1.8em;
+  }
+}
+
+.star-container {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: $purple-global;
+  display: block;
+  margin: auto;
+  margin-top: -55px;
+}
+
+.sign-in-container{
+ @extend .Opening-Page;
+ display: block ;
+  h1{
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-top: 50px;
+  }
+ input{
+   height: 8vh;
+   width: 80%;
+   margin-top: 20px;
+   outline: none;
+   border-radius: 10px;
+   border: none;
+   padding-left:15px;
+   font-weight: 740;
+   color:$purple-global;
+   text-transform:uppercase;
+ }
+ .file{
+  @extend input;
+  display: inline-block;
+  background-color: #fff;
+  
+  padding-bottom: 25px;
+  
+}
+
+}
+
+.button-container{
+  width: 80%;
+  display: flex;
+  justify-content: space-between ;
+  margin: auto;
+
+  button{
+    height: 50px;
+    width: 100px;
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1em;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: $pink-global;
+   
+    margin-top: 50px;
+
+  }
+}
+
