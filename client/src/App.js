@@ -2,14 +2,22 @@ import React from 'react';
 
 import './App.scss';
 import OpeningPage from './components/OpeningPage';
-import SignIn from './components/SignIn';
+import  AllSignInPages from './AllSignInPages'
+import UserProfile from './components/UserProfile'
+import MessageContainer from './components/MessageContainer'
 
 function App() {
 
   return (
     <div className="App">
       <OpeningPage />
-      <SignIn />
+      <AllSignInPages />
+     
+       <UserProfile />
+
+       <MessageContainer />
+      
+
     </div>
   );
 }
