@@ -1,24 +1,32 @@
 import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import './App.scss';
-import OpeningPage from './components/OpeningPage';
-import  AllSignInPages from './AllSignInPages'
-import UserProfile from './components/UserProfile'
-import MessageContainer from './components/MessageContainer'
+
+import LoginPage from './components/auth/LoginPage'
+import SignupPage from './components/auth/SignupPage'
+
+import Home from './components/home/Home'
+import Profile from './components/profile/Profile';
+
+
+
 
 function App() {
-
   return (
-    <div className="App">
-      <OpeningPage />
-      <AllSignInPages />
-     
-       <UserProfile />
+    <BrowserRouter>
+      <div className="App">
+        <Home/>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/login" component={LoginPage} />
+          <Route path="/profile" component={Profile} />
+        </Switch>
 
-       <MessageContainer />
-      
 
-    </div>
+
+
+      </div>
+    </BrowserRouter>
   );
 }
 
